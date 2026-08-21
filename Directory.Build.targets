@@ -1,0 +1,6 @@
+<Project>
+
+  <!-- Empty by design; see Directory.Build.props next to it. MSBuild resolves .props and .targets with
+       two separate walk-ups, so stopping one does not stop the other. -->
+
+</Project>

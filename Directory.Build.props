@@ -1,0 +1,15 @@
+<Project>
+
+  <!--
+    Deliberately empty, and deliberately NOT upstream material - this file exists only on the `nexaflow`
+    integration branch.
+
+    Nexaflow consumes src/TreeSitter.csproj by ProjectReference from a repo whose own root carries a
+    Directory.Build.props (it pins Platforms=x64 and repo-wide NoWarn). MSBuild walks UP from a project
+    until it finds one of these, so without a file here this repo's projects would silently inherit
+    Nexaflow's build settings. Stopping the walk-up keeps upstream's build exactly as upstream defines it.
+
+    Directory.Build.targets next to it does the same for the targets walk, which is a separate lookup.
+  -->
+
+</Project>
